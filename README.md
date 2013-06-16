@@ -8,8 +8,8 @@
 
 仅仅是backbone与seajs的一个练习，主要是练习了seaj组合backbone的结构方式，像代码优化、测试等并未涉及。
 ## 环境
-+ [nodejs]
-+ [grunt]
+	+ [nodejs]
+	+ [grunt]
 ## 如何使用
 运行`@-run.bat`然后访问http://localhost:9000/
 
