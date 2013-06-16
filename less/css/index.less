@@ -1,0 +1,79 @@
+//基础样式与变量定义
+@import "../bootstrap/variables";
+@import "../bootstrap/mixins";
+@import "../bootstrap/reset";
+@import "../variables";
+@import "../mixins";
+
+//引入相关样式
+//@import "bootstrap";
+@import "../bootstrap/scaffolding";
+@import "../bootstrap/grid";
+@import "../bootstrap/Layouts";
+
+
+// 媒体查询定义
+//@import "responsive";
+//引入css3动画
+@import "../lesshat";
+@import "../animate/fadeInLeft";
+@import "../animate/animate";
+body{
+	margin:8px; 
+}
+
+#container{
+	
+}
+header{
+	margin-top: 30px;
+	text-align: center;
+	line-height:normal;
+	.title{
+		font-size: 4em;
+	}
+	.aside{
+		margin-left: 155px;
+		font-size: 2em;
+	}
+}
+#nav{
+	margin-top: 30px;
+	li{
+		list-style: none;
+		text-align: center;
+		font-size: 2.5em;
+		margin: 5px 0 0 0;
+		padding: 5px;
+		color: #fff;
+		text-shadow: 0 1px 0 rgba(0,0,0,.3);
+		border-radius: 5px;
+		border: 1px solid #17a;
+		box-shadow: inset 0 0 0 1px rgba(255,255,255,.3);
+		font-weight: bold;
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		backface-visibility: hidden;
+		&:hover{
+			background: #39c;
+			background-image: -webkit-linear-gradient(-45deg,rgba(255,255,255,0),rgba(255,255,255,.1) 60%,rgba(255,255,255,0) 60%);
+			background-image: -moz-linear-gradient(-45deg,rgba(255,255,255,0),rgba(255,255,255,.1) 60%,rgba(255,255,255,0) 60%);
+			background-image: linear-gradient(-45deg,rgba(255,255,255,0),rgba(255,255,255,.1) 60%,rgba(255,255,255,0) 60%);
+		}
+	}
+	a{
+		text-decoration: none;
+		line-height: 2em;
+		display: block;
+		
+		.transition(background 500ms ease-in-out 0ms, color 500ms ease-in-out 0ms);
+		&:hover{
+			
+			color: @white;
+		}
+	}
+}
+.wrapper{
+	background-color: red;
+}

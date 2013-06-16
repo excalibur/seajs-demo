@@ -1,0 +1,139 @@
+/*
+	Menu
+		- always opened on widescreens
+*/
+@media all and (min-width: 900px) {
+
+	/* positioning and sizing */
+	body
+	{
+		position: relative;
+	}
+	.mmenu-page
+	{
+		box-shadow: none !important;
+		background-color: inherit;
+		width: 70% !important;
+		height: 100%;
+		margin-left: 0 !important;
+		left: 30% !important;
+		position: fixed;
+		z-index: 1;
+		overflow-y: auto;
+		
+		-webkit-overflow-scrolling: touch;
+	
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.mmenu
+	{
+		position: fixed;
+		z-index: 0;
+	}
+	.mmenu.mmenu-left > ul > li
+	{
+		padding-right: 0;
+	}
+	.mmenu.mmenu-right > ul > li
+	{
+		padding-left: 0;
+	}
+	.mmenu.mmenu-vertical
+	{
+		width: 30%;
+	}
+	.mmenu.mmenu-horizontal
+	{
+		width: 150%;
+	}
+	.mmenu.mmenu-right.mmenu-horizontal
+	{
+		left: 0;
+		right: auto;
+	}
+	.mmenu a.mmenu-subopen
+	{
+		right: 0;
+	}
+	.mmenu.mmenu-right a.mmenu-subclose:before
+	{
+		left: 20px;
+	}
+	.mmenu em.mmenu-counter
+	{
+		right: 40px;
+	}
+	.mmenu div.mmenu-search
+	{
+		width: 30%;
+		padding: 10px !important;
+	}
+	
+	.mmenu:first-child,
+	.mmenu.mmenu-opened
+	{
+		display: block;
+	}
+	
+	/* theming */
+	.mmenu
+	{
+		background: #fff;
+	}
+	.mmenu *
+	{
+		text-shadow: none;
+	}
+	.mmenu li
+	{
+		border-top-color: #fff;
+		border-bottom-color: #ddd;
+		position: relative;
+	}
+	.mmenu li > a,
+	.mmenu li > span,
+	.mmenu li > a:hover
+	{
+		color: #666;
+	}
+	.mmenu li.mmenu-selected > a,
+	.mmenu li.mmenu-selected > span
+	{
+		background: #f3f3f3;
+	}
+	.mmenu a.mmenu-subclose
+	{
+		background: #ddd;
+	}
+	.mmenu a.mmenu-subopen
+	{
+		border-left-color: #ddd;
+	}
+	.mmenu a.mmenu-subopen:after,
+	.mmenu a.mmenu-subclose:before
+	{
+		border-color: rgba( 0, 0, 0, 0.2 );
+	}
+	.mmenu li.mmenu-label,
+	.mmenu em.mmenu-counter
+	{
+		background: #ddd;
+		color: #777;
+	}
+	.mmenu em.mmenu-counter
+	{
+		box-shadow: none;
+	}
+	.mmenu div.mmenu-search
+	{
+		background: #ddd;
+		border-bottom-color: #ccc;
+	}
+	.mmenu div.mmenu-search input
+	{
+		background: #fff;
+		color: #444;
+	}
+}

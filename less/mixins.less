@@ -1,0 +1,10 @@
+#gradient{
+	 .radial-ellipse(@innerColor: #555, @outerColor: #333){
+	 	  background-color: @innerColor;
+          background-image: -moz-radial-gradient(50% 50%, ellipse closest-side, @innerColor, @outerColor 100%); 
+          background-image: -webkit-radial-gradient(50% 50%, ellipse closest-side, @innerColor, @outerColor 100%);
+          background-image: -o-radial-gradient(50% 50%, ellipse closest-side, @innerColor, @outerColor 100%); 
+          background-image: -ms-radial-gradient(50% 50%, ellipse closest-side, @innerColor, @outerColor 100%);
+          background-image: radial-gradient(50% 50%, ellipse closest-side, @innerColor, @outerColor 100%);
+	 }
+}
